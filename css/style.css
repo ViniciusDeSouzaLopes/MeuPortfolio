@@ -1,0 +1,225 @@
+body {
+  font-family: Nunito, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/DarkStars.jpg);
+  background-attachment: fixed;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Asap, sans-serif;
+  color: #FFFFFF;
+}
+
+p {
+  font-family: Roboto, serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(28, 28, 28, .6);
+}
+
+nav>a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 32px;
+  font-family: Yellowtail, serif;
+
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+nav ul li {
+  text-align: center;
+  width: 100%;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 0;
+  width: 100%;
+  color: #FFFFFF;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+header h1 {
+  color: #FFFFFF;
+}
+
+header p {
+  width: 60%;
+  margin-bottom: 2em;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 10px 20px 20px;
+  color: #FFFFFF;
+}
+
+#about p {
+  width: 60%;
+  margin-bottom: 2.5em;
+}
+
+#about li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutme {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+.performance {
+  margin-bottom: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.performance div {
+  padding-left: 10px;
+}
+
+.performance img {
+  padding: 10px;
+}
+
+.hardSkill {
+  display: flex;
+}
+
+.softSkill {
+  display: flex;
+}
+
+#footer {
+  background-color: rgba(28, 28, 28, .6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 28px;
+}
+
+#footer a {
+  color: #FFFFFF;
+}
+
+.contact {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+#profile a {
+  padding: 8px;
+}
+
+@media screen and (max-width: 768px) {
+
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  nav ul {
+    flex-direction: row;
+    width: 70%;
+  }
+
+  header {
+    justify-content: center;
+
+  }
+
+  #about {
+    height: 250px;
+    height: 30vh;
+    justify-content: center;
+    min-height: 250px;
+  }
+
+  #about img {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50%;
+  } 
+
+  .performance {
+    padding-bottom: 4rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .hardSkill {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .softSkill {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  #footer h2,
+  #footer p {
+    width: 100%;
+  }
+
+  .contact a {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
